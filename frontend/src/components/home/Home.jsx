@@ -52,6 +52,7 @@ const Home = () => {
       {/* <Founder />
 
       <Menu /> */}
+      {/* <Founder /> */}
     </>
   );
 };
