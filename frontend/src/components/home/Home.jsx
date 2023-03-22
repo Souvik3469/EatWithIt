@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import Founder from "./Founder";
-// import Menu from "./Menu";
+import Founder from "./Founder";
+import Menu from "./Menu";
 
 const Home = () => {
   const options = {
@@ -19,7 +19,7 @@ const Home = () => {
     <>
       <section className="home">
         <div>
-          <motion.h1 {...options}>EatWithIt</motion.h1>
+          <motion.h1 {...options}>Eat With It</motion.h1>
           <motion.p
             {...options}
             transition={{
@@ -47,12 +47,11 @@ const Home = () => {
           Explore Menu
         </motion.a>
       </section>
-            <h2>Founder</h2>
-             <h2>Menu</h2>
-      {/* <Founder />
+          
+      <Founder />
 
-      <Menu /> */}
-      {/* <Founder /> */}
+      <Menu />
+     
     </>
   );
 };
