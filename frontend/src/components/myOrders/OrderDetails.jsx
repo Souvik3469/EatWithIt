@@ -16,7 +16,7 @@ const OrderDetails = () => {
           <h1>Contact</h1>
           <p>
             <b>Name</b>
-            {"Abhishek"}
+            {"Souvik"}
           </p>
           <p>
             <b>Phone</b>
@@ -74,19 +74,19 @@ const OrderDetails = () => {
         <article>
           <h1>Ordered Items</h1>
           <div>
-            <h4>Cheese Burger</h4>
+            <h4>Chicken Cheese Burger</h4>
             <div>
               <span>{12}</span> x <span>{232}</span>
             </div>
           </div>
           <div>
-            <h4>Veg Cheese Burger</h4>
+            <h4>Drums of Heaven</h4>
             <div>
               <span>{10}</span> x <span>{500}</span>
             </div>
           </div>
           <div>
-            <h4>Burger Fries</h4>
+            <h4>Margherita Chedder Pizza</h4>
             <div>
               <span>{10}</span> x <span>{1800}</span>
             </div>
