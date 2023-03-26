@@ -30,7 +30,7 @@ const Orders = () => {
                 <td>23</td>
                 <td>₹{21312}</td>
                 <td>COD</td>
-                <td>Abhi</td>
+                <td>Ron</td>
                 <td>
                   <Link to={`/order/${"asdsds"}`}>
                     <AiOutlineEye />
