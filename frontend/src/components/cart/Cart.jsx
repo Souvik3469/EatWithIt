@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import pic1 from "../../assets/pic1.jpg";
 import pic2 from "../../assets/pic2.jpg";
@@ -22,82 +20,9 @@ const CartItem = ({ value, title, img, increment, decrement }) => (
 );
 
 const Cart = () => {
-  // const {
-  //   cartItems: {
-  //     cheeseBurger: { quantity: cheeseBurger },
-  //     vegCheeseBurger: { quantity: vegCheeseBurger },
-  //     burgerWithFries: { quantity: burgerWithFries },
-  //   },
-  //   subTotal,
-  //   tax,
-  //   shippingCharges,
-  //   total,
-  // } = useSelector((state) => state.cart);
+  const increment = (item) => {};
 
-  // const { cartItems: orderItems } = useSelector((state) => state.cart);
-
-  // const dispatch = useDispatch();
-
-  const increment = (item) => {
-    // switch (item) {
-    //   case 1:
-    //     dispatch({ type: "cheeseBurgerIncrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    //   case 2:
-    //     dispatch({ type: "vegCheeseBurgerIncrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    //   case 3:
-    //     dispatch({ type: "burgerWithFriesIncrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-
-    //   default:
-    //     dispatch({ type: "cheeseBurgerIncrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    // }
-  };
-
-  const decrement = (item) => {
-    // switch (item) {
-    //   case 1:
-    //     if (cheeseBurger === 0) break;
-    //     dispatch({ type: "cheeseBurgerDecrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    //   case 2:
-    //     if (vegCheeseBurger === 0) break;
-    //     dispatch({ type: "vegCheeseBurgerDecrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    //   case 3:
-    //     if (burgerWithFries === 0) break;
-    //     dispatch({ type: "burgerWithFriesDecrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-
-    //   default:
-    //     if (cheeseBurger === 0) break;
-    //     dispatch({ type: "cheeseBurgerDecrement" });
-    //     dispatch({ type: "calculatePrice" });
-    //     break;
-    // }
-  };
-
-  // useEffect(() => {
-  //   localStorage.setItem("cartItems", JSON.stringify(orderItems));
-  //   localStorage.setItem(
-  //     "cartPrices",
-  //     JSON.stringify({
-  //       subTotal,
-  //       tax,
-  //       shippingCharges,
-  //       total,
-  //     })
-  //   );
-  // }, [orderItems, subTotal, tax, shippingCharges, total]);
+  const decrement = (item) => {};
 
   return (
     <section className="cart">
@@ -105,21 +30,21 @@ const Cart = () => {
         <CartItem
           title={"Chicken Cheese Burger"}
           img={pic1}
-          // value={cheeseBurger}
+          value={0}
           increment={() => increment(1)}
           decrement={() => decrement(1)}
         />
         <CartItem
           title={"Drums of Heaven"}
           img={pic2}
-          // value={vegCheeseBurger}
+          value={0}
           increment={() => increment(2)}
           decrement={() => decrement(2)}
         />
         <CartItem
           title={"Margherita Chedder Pizza"}
           img={pic3}
-          // value={burgerWithFries}
+          value={0}
           increment={() => increment(3)}
           decrement={() => decrement(3)}
         />
@@ -127,19 +52,19 @@ const Cart = () => {
         <article>
           <div>
             <h4>Sub Total</h4>
-            {/* <p>₹{subTotal}</p> */}
+            <p>₹{2000}</p>
           </div>
           <div>
             <h4>Tax</h4>
-            {/* <p>₹{tax}</p> */}
+            <p>₹{2000 * 0.18}</p>
           </div>
           <div>
             <h4>Shipping Charges</h4>
-            {/* <p>₹{shippingCharges}</p> */}
+            <p>₹{200}</p>
           </div>{" "}
           <div>
             <h4>Total</h4>
-            {/* <p>₹{total}</p> */}
+            <p>₹{2000 + 2000 * 0.18 + 200}</p>
           </div>
           <Link to="/shipping">Checkout</Link>
         </article>
