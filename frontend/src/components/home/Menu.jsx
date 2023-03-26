@@ -60,7 +60,7 @@ const Menu = () => {
           itemNum={3}
           burgerSrc={pic3}
           price={600}
-          title="Margaritta chedder Pizza"
+          title="Margherita Chedder Pizza"
           delay={0.8}
           handler={addToCartHandler}
         />
